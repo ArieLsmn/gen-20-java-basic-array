@@ -19,12 +19,12 @@ public class ArrayOperation {
         }
         return sum;
     }
-    public static int[] arrayReverse(int[] input)
-    {
+    public static int[] arrayReverse(int[] input) {
+
         int[] revArr = new int[input.length];
         int j = input.length;
-        for (int i = 0; i < input.length; i++) {
-            revArr[j - 1] = input[i];
+        for (int k : input) {
+            revArr[j - 1] = k;
             j--;
         }
         return revArr;
