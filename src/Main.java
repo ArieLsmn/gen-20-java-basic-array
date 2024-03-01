@@ -20,7 +20,7 @@ public class Main {
         System.out.println();
         //tugas array
 
-        int[][] arr2 = {{1,2,3},{3,4,5},{3,4,6}};
+        int[][] arr2 = {{1,2,3,4,5},{3,4,5},{3,4,5,1}};
 
 
         System.out.println("Total array 1 dimensi:");
@@ -58,13 +58,13 @@ public class Main {
         ReadText.readFile("test.txt");
 
         System.out.println();
+        System.out.println("Ketik teks yang akan di write ke file:");
         in.nextLine();
         String line = in.nextLine();
-        WriteText.writeFile("testfile.txt",
-        line);
+        WriteText.writeFile("testfile.txt",line);
 
-        System.out.println("Isi teks yang di write:");
-        ReadText.readFile("testfile.txt");
+        //System.out.println("Isi teks yang di write:");
+        //ReadText.readFile("testfile.txt");
 
     }
 }
