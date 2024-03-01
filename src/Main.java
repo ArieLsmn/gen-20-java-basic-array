@@ -23,7 +23,11 @@ public class Main {
         }
         System.out.println();
         ReadText.readFile("test.txt");
-        WriteText.writeFile("testfile.txt");
+        WriteText.writeFile("testfile.txt",
+        "Hello World\r\nGood Bye!\nHello again");
+
+        System.out.println();
+        ReadText.readFile("testfile.txt");
 
     }
 }

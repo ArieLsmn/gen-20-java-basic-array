@@ -4,13 +4,12 @@ import java.io.*;
 
 public class WriteText {
 
-    public static void writeFile(String dir){
+    public static void writeFile(String dir, String content){
 
         try {
-            FileWriter writer = new FileWriter(dir, true);
-            writer.write("Hello World");
-            writer.write("\r\n");   // write new line
-            writer.write("Good Bye!");
+
+            FileWriter writer = new FileWriter(dir, false);
+            writer.write(content);
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
