@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println("Panjang array 1 dimensi:");
         Scanner in = new Scanner(System.in);
         int p1 = in.nextInt();
@@ -55,16 +55,20 @@ public class Main {
         System.out.println();
         //Tugas read write file teks
         System.out.println("Isi teks yang di read:");
-        ReadText.readFile("test.txt");
+        try {
+            ReadText.readFile("test.txt");
 
-        System.out.println();
-        System.out.println("Ketik teks yang akan di write ke file:");
-        in.nextLine();
-        String line = in.nextLine();
-        WriteText.writeFile("testfile.txt",line);
+            System.out.println();
+            System.out.println("Ketik teks yang akan di write ke file:");
+            in.nextLine();
+            String line = in.nextLine();
+            WriteText.writeFile("testfile.txt", line);
 
-        //System.out.println("Isi teks yang di write:");
-        //ReadText.readFile("testfile.txt");
-
+            //System.out.println("Isi teks yang di write:");
+            //ReadText.readFile("testfile.txt");
+        }
+        catch(IOException e){
+            System.out.println("Gagal");
+        }
     }
 }
