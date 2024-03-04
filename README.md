@@ -7,6 +7,7 @@ Berisi class ArrayOperation, yang terdiri atas 3 method untuk masing-masing tuga
 * ArraySum untuk mentotalkan array 1 dimensi
 * ArraySum2D untuk mentotalkan array 2 dimensi
 * ArrayReverse untuk membalik urutan array
+* ArrayReverse2D untuk membalik urutan array 2 dimensi
 
 ## TextReadWrite
 Berisi class ReadText dan WriteText, masing masing berfungsi untuk membaca teks dari file dan membuat file teks
