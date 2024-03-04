@@ -4,20 +4,24 @@ import java.io.*;
 
 public class ReadText {
 
-    public static void readFile(String dir) throws IOException {
-        File file = new File(
-                dir);
+    public static void readFile(String dir) {
+        File file = new File(dir);
 
-        BufferedReader br
-                = new BufferedReader(new FileReader(file));
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
 
 
-        String st;
+            String st;
 
-        while ((st = br.readLine()) != null)
+            while ((st = br.readLine()) != null)
 
-            // Print the string
-            System.out.println(st);
+                // Print the string
+                System.out.println(st);
+
+    }
+    catch(IOException e){
+        System.out.println("Gagal read");
     }
 
+}
 }
